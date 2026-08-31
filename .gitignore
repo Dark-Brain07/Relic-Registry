@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+artifacts/
+.venv/
+venv/
+.verify-venv/
+.env
+.env.*
+internal/
+SPECIFICATION.md
