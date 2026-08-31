@@ -9,19 +9,7 @@ An on-chain oracle that classifies material gaps in an identified relic's public
 - Deployer/owner: `0x42d29F098a6fa448B8cCafe50b1291951A9A500d`
 - Deploy transaction: [`0x7b16af4d…f25758`](https://explorer-studio.genlayer.com/tx/0x7b16af4dd822353e92368069dec21e27791c18597135bf81601c016a21f25758)
 
-| Evidence | Transaction | FINALIZED result | Authoritative effect |
-|---|---|---|---|
-| Registration | [`0x2809fff9…ac9c7b75`](https://explorer-studio.genlayer.com/tx/0x2809fff96ca5b55b14abee7a8d5b0abadb6d530089ea5268149df488ac9c7b75) | SUCCESS, Accepted | Sealed Getty object `92.PB.82`, years 1921–1976, threshold 2, revision 0 |
-| First assessment | [`0xb5d2e26c…b0cf6815`](https://explorer-studio.genlayer.com/tx/0xb5d2e26c5f96c30e632b7e540cd9db2b69b2a17c64c29fd3bace6e36b0cf6815) | SUCCESS, MAJORITY_AGREE (3 agree, 1 disagree after rotation) | `ASSESSED`, revision 1, `OPEN_ENDED_GAP` |
-| Replay | [`0xbb47852e…249a9861`](https://explorer-studio.genlayer.com/tx/0xbb47852e194b5241a2313094a6f6789efcd5f64035ea1fb5cb221be1249a9861) | SUCCESS, MAJORITY_AGREE (3 agree, 2 idle) | Returned stored result; revision remained 1 |
-| Valid revised evidence | [`0x1451a8cc…744dc76e`](https://explorer-studio.genlayer.com/tx/0x1451a8cc94856e6b678288554fc0fc35836af74e56cab8585037fa20744dc76e) | SUCCESS, MAJORITY_AGREE (3 agree, 2 idle) | `REASSESSED`, revision 2; revision 1 remained readable |
-| Exact identity mismatch | [`0xe98dd929…47524a8a`](https://explorer-studio.genlayer.com/tx/0xe98dd929c51a75291fa4f3783a7206dc20fd23886c06110175dfcba247524a8a) | SUCCESS, MAJORITY_AGREE (3 agree, 2 disagree) | Returned `UNRESOLVED/IDENTITY_MISMATCH`; state remained revision 2 |
-| Non-owner reassessment | [`0xc9ebfb17…b35dd798`](https://explorer-studio.genlayer.com/tx/0xc9ebfb17d13053d4fa916e2f38f354e4b4302ee667d207c062c479feb35dd798) | ERROR rollback, MAJORITY_AGREE (3 agree, 2 idle) | `UNAUTHORIZED: owner only`; state unchanged |
-| Stale revision | [`0x0038c2d4…78985f44`](https://explorer-studio.genlayer.com/tx/0x0038c2d4ce313053ea30eae52d63c12185c747a43a1906071c4ceff078985f44) | ERROR rollback, MAJORITY_AGREE (3 agree, 2 idle) | `STALE_REVISION`; state unchanged |
 
-The live object is Getty accession `92.PB.82`, *The Entry of the Animals into Noah's Ark*, evaluated over 1921–1976 with a two-year materiality threshold. Exact transaction inputs are in [`samples/`](samples/).
-
-The exact public read commands, returned values, revision hashes, and transaction-order proof for every state postcondition are in [`docs/verification.md`](docs/verification.md). They can be rerun against the public Studionet contract without a private key.
 
 ## Problem and Why GenLayer
 
