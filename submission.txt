@@ -4,6 +4,6 @@
 **Description:**
 An on-chain oracle that classifies material gaps in an identified relic's public provenance timeline without making ownership, authenticity, or legality claims. It utilizes GenLayer AI to parse complex provenance records and consensus mechanisms to agree on the classification of the gaps.
 
-- **Contract Address:** `0x719104cb642088B40A1D30fCc982D283458F2289`
-- **Explorer Link:** [View on GenLayer Studio](https://explorer-studio.genlayer.com/address/0x719104cb642088B40A1D30fCc982D283458F2289)
+- **Contract Address:** `0x6770aE66368Cff2A109E924f6c658F479aa7babA`
+- **Explorer Link:** [View on GenLayer Studio](https://explorer-studio.genlayer.com/address/0x6770aE66368Cff2A109E924f6c658F479aa7babA)
 - **Source Code:** [View on GitHub](https://github.com/Dark-Brain07/Relic-Registry)

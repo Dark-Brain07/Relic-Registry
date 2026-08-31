@@ -5,7 +5,7 @@ This document makes the E2E state claims reproducible from the public contract. 
 ## Target
 
 - Network: GenLayer Studionet, Chain ID `61999`
-- Contract: [`0x719104cb642088B40A1D30fCc982D283458F2289`](https://explorer-studio.genlayer.com/address/0x719104cb642088B40A1D30fCc982D283458F2289)
+- Contract: [`0x6770aE66368Cff2A109E924f6c658F479aa7babA`](https://explorer-studio.genlayer.com/address/0x6770aE66368Cff2A109E924f6c658F479aa7babA)
 
 Select Studionet once:
 
@@ -16,7 +16,7 @@ genlayer config set network=studionet
 ## Current Identity and Lifecycle
 
 ```powershell
-genlayer call 0x719104cb642088B40A1D30fCc982D283458F2289 read_object_identity --args [YOUR_OBJECT_ID]
+genlayer call 0x6770aE66368Cff2A109E924f6c658F479aa7babA read_object_identity --args [YOUR_OBJECT_ID]
 ```
 
 *(Once you execute test transactions, you can record the verified returns here).*
@@ -24,7 +24,7 @@ genlayer call 0x719104cb642088B40A1D30fCc982D283458F2289 read_object_identity --
 ## Current Oracle View
 
 ```powershell
-genlayer call 0x719104cb642088B40A1D30fCc982D283458F2289 read_gap_status --args [YOUR_OBJECT_ID]
+genlayer call 0x6770aE66368Cff2A109E924f6c658F479aa7babA read_gap_status --args [YOUR_OBJECT_ID]
 ```
 
 *(Once you execute test transactions, you can record the verified returns here).*
@@ -32,7 +32,7 @@ genlayer call 0x719104cb642088B40A1D30fCc982D283458F2289 read_gap_status --args 
 ## Immutable Revision 1
 
 ```powershell
-genlayer call 0x719104cb642088B40A1D30fCc982D283458F2289 read_assessment --args [YOUR_OBJECT_ID] 1
+genlayer call 0x6770aE66368Cff2A109E924f6c658F479aa7babA read_assessment --args [YOUR_OBJECT_ID] 1
 ```
 
 *(Once you execute test transactions, you can record the verified returns here).*
@@ -41,4 +41,4 @@ genlayer call 0x719104cb642088B40A1D30fCc982D283458F2289 read_assessment --args 
 
 | Scenario | Public transaction evidence | Reproducible state proof |
 |---|---|---|
-| Deploy | [`0x7b16af4d…f25758`](https://explorer-studio.genlayer.com/tx/0x7b16af4dd822353e92368069dec21e27791c18597135bf81601c016a21f25758) | Contract address resolves and all three public views execute. |
+| Deploy | [`0xcdb88d51…f23c481`](https://explorer-studio.genlayer.com/tx/0xcdb88d516b0032dec243b2bc7389bd48fb57a281688d2453721e8fd18f23c481) | Contract address resolves and all three public views execute. |

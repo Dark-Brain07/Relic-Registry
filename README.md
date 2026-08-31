@@ -5,9 +5,9 @@ An on-chain oracle that classifies material gaps in an identified relic's public
 ## Live Deployment
 
 - Network: GenLayer Studionet (Chain ID `61999`)
-- Contract: [`0x719104cb642088B40A1D30fCc982D283458F2289`](https://explorer-studio.genlayer.com/address/0x719104cb642088B40A1D30fCc982D283458F2289)
+- Contract: [`0x6770aE66368Cff2A109E924f6c658F479aa7babA`](https://explorer-studio.genlayer.com/address/0x6770aE66368Cff2A109E924f6c658F479aa7babA)
 - Deployer/owner: `0x42d29F098a6fa448B8cCafe50b1291951A9A500d`
-- Deploy transaction: [`0x7b16af4d…f25758`](https://explorer-studio.genlayer.com/tx/0x7b16af4dd822353e92368069dec21e27791c18597135bf81601c016a21f25758)
+- Deploy transaction: [`0xcdb88d51…f23c481`](https://explorer-studio.genlayer.com/tx/0xcdb88d516b0032dec243b2bc7389bd48fb57a281688d2453721e8fd18f23c481)
 
 
 
